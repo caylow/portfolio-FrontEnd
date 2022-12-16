@@ -15,7 +15,8 @@
     <title>Portfolio Web</title>
 </head>
 <body class="bg-dark">
-    <header>
+  <div class="d-flex flex-column container vh-100">
+    <header class="row">
         <!--Nav Bar-->
         <nav class="navbar navbar-dark navbar-expand-lg p-4">
             <div class="container justify-content-between">
@@ -39,19 +40,16 @@
             </div>
           </nav>
     </header>
-    <section class="d-flex justify-content-center">
-        <div class="container text-light m-5">
-            <div class="row align-items-center">
-            <div class="col">
-                <h1 class="">Hola! Me llamo Juan Pablo<br>practico para ser<br>desarrollador Full Stack Junior</h1>
-            </div>
-            <div class="col-2">
-                <img src="https://avatars.githubusercontent.com/u/24610432?s=400&v=4" class="img-thumbnail" alt="GitHub Profile Photo">
-            </div>
-        </div>
-        </div>
+    <section class="d-flex container row align-items-center text-light h-100">
+      <div class="col">
+          <h1>Hola! Me llamo <b>Juan Pablo</b><br>practico para ser<br>desarrollador <b>Full Stack Junior</b></h1>
+      </div>
+      <div class="col-2">
+          <img src="https://avatars.githubusercontent.com/u/24610432?s=400&v=4" class="img-thumbnail" alt="GitHub Profile Photo">
+      </div>
     </section>
-<!-- Bootstrap JS -->
-<script src="dist/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="dist/bootstrap/js/bootstrap.bundle.js"></script>
+</div>
 </body>
 </html>

@@ -1,13 +1,24 @@
+* {
+    box-sizing: border-box;
+}
 html, body{
-    height:100%;
-    width:100%;
-
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .display-1, .display-2, .display-3,
 .display-4, .display-5, .display-6{
     font-family: 'Montserrat', sans-serif;
+}
+h1{
+    margin:0;
 }
 nav{
     font-family: 'Montserrat', sans-serif;
@@ -16,3 +27,8 @@ nav ul li a{
     font-weight: 600;
     text-transform: uppercase;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
