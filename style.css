@@ -39,3 +39,9 @@ nav ul li a{
     flex-direction: column;
     flex-grow: 1;
   }
+  .social-link{
+    color:inherit;
+  }
+  .social-link:hover{
+    color:#acacac;
+  }
