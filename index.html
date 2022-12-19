@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!--CSS Styles-->
     <link rel="stylesheet" href="style.css" media="all">
     <!--Boostrap CSS-->
@@ -18,10 +18,10 @@
 </head>
 <body>
   <div class="d-flex flex-column container-fluid align-items-center p-0">
-    <div class="d-flex flex-column container-fluid bg-dark">
+    <header class="d-flex flex-column container-fluid bg-light">
       <!--Nav Bar-->
-      <header class="row">
-          <nav class="navbar navbar-dark navbar-expand-lg p-4">
+      <div class="row bg--primary">
+          <nav class="navbar navbar-light navbar-expand-lg p-3">
               <div class="container justify-content-between">
                 <a class="navbar-brand" href="#">Juan Pablo Biondo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,12 +42,12 @@
                 </div>
               </div>
             </nav>
-      </header>
+          </div>
       <!--Intro Section-->
       <section class="container align-self-center row align-items-center text-light flex-grow-1 p-5">
         <div class="d-flex row align-items-center">
           <div class="col">
-              <h1>Hola! Me llamo <b>Juan Pablo</b><br>practico para ser<br>desarrollador <b>Full Stack Junior</b></t1>
+              <h1 class="introduction-text">Hola! Me llamo<br><span>Juan Pablo</span><br>practico para ser desarrollador<br><span>Full Stack Junior</span></t1>
           </div>
           <div class="d-flex col-md-3 row justify-content-center">
               <img src="https://avatars.githubusercontent.com/u/24610432?s=400&v=4" class="img-thumbnail row" alt="GitHub Profile Photo">
@@ -71,7 +71,7 @@
           </div>
         </div>
       </section>
-   </div>
+   </header>
    <!--Skill Section-->
     <section class="container row m-5">
       <h1>Habilidades</h1>
@@ -173,7 +173,7 @@
       </div>
     </section>
     <!--Contact Form-->
-    <section class="shadow rounded bg-dark text-light row m-5 p-5">
+    <section class="bg-light shadow rounded bg--primary text-light row m-5 p-5">
       <h1>Contáctame</h1>
       <form>
         <div class="row form-group m-2">
@@ -192,8 +192,8 @@
       </form>
     </section>
     <!--Footer-->
-    <footer class="bg-dark text-muted w-100 row p-3 text-center text-bold align-items-center justify-content-center">
-      <p class="m-0">2.022  J.P.B.</p>
+    <footer class="w-100 row text-center align-items-center justify-content-center">
+      <p class="m-0">© 2022 Biondo JP</p>
     </footer>
     <!-- Bootstrap JS -->
     <script src="dist/bootstrap/js/bootstrap.bundle.js"></script>

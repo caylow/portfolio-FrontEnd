@@ -1,50 +1,138 @@
+:root{
+    --main-bg-color:#F4F4F2;
+    --p-font:'Merriweather', serif;
+    --h-font:'Montserrat', sans-serif;
+    --secondary-color: #495464;
+    --terceary-color: #E8E8E8;
+    --font-weight-medium:500;
+    --font-weight-bold:700;
+}
 * {
     box-sizing: border-box;
     font-size: 16px;
 }
+/*Body's and html styles*/
 html, body{
     margin: 0;
     padding: 0;
 }
-html{
-    height: 100vh;
-}
 body{
     height: 100%;
 }
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
-.display-1, .display-2, .display-3,
-.display-4, .display-5, .display-6{
-    font-family: 'Montserrat', sans-serif;
+body{
+    background-color: var(--terceary-color)!important;
+}
+
+/*
+    Classes Variables
+*/
+.bg--primary{
+    background-color: var(--main-bg-color);
+}
+
+
+/* 
+Headings and pagraphs default settings
+*/
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--h-fonts);
+    color:var(--secondary-color);
+}
+h2, h3, h4, h5, h6{
+    font-weight: var(--font-weight-medium)!important;
 }
 h1{
-    font-weight: 600;
+    font-weight: var(--font-weight-bold)!important;
 }
 h5{
     margin: 0;
 }
-h1 b{
-    font-size: inherit;
+p, span{
+    font-family: var(--h-font);
 }
+span{
+    font-size: 2em;
+}
+
+/*
+Introduction section
+*/
+h1.introduction-text{
+    font-weight: 300!important;
+    font-family: var(--h-font)!important;
+}
+
+/*
+Nav-bar
+*/
 nav{
-    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.05);
+    font-family: var(--h-fonts);
+
 }
 nav ul li a{
-    font-weight: 600;
     text-transform: uppercase;
 }
+.navbar-brand{
+    font-family: var(--h-font);
+    font-weight: var(--font-weight-medium);
+    color:var(--secondary-color)!important;
+    font-size:3em;
+}
+a.nav-link{
+    color:var(--secondary-color)!important;
+}
+a.nav-link:hover{
+    color:var(--secondary-color);
+    opacity: .5;
+}
+.nav-item{
+    font-family: var(--h-font);
+    font-weight: var(--font-weight-bold);
+}
+/*
+
+*/
 .wrapper {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-  }
-  .social-link{
-    color:inherit;
-  }
-  .social-link:hover{
-    color:#acacac;
-  }
-  .text-area{
-    resize: none;
-  }
+}
+
+/*
+Skill Section
+*/
+.card-body{
+    padding: 2rem!important;
+}
+
+/*
+Social Media Icons
+*/
+
+.social-link{
+color:inherit;
+}
+a.social-link i:hover{
+color:var(--secondary-color);
+opacity: .5;
+}
+.text-area{
+resize: none;
+}
+i{
+    color:var(--secondary-color);
+}
+
+/*
+Footer
+*/
+footer{
+    background-color: var(--secondary-color);
+    padding: 2em;
+}
+footer p{
+    color:var(--main-bg-color);
+    font-family: var(--h-fonts);
+    font-size: 1em;
+}
