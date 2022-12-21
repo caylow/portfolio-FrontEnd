@@ -18,9 +18,9 @@
 </head>
 <body>
   <div class="d-flex flex-column container-fluid align-items-center p-0">
-    <header class="d-flex flex-column container-fluid bg-light">
+    <header class="d-flex row container-fluid bg-light m-0 p-0">
       <!--Nav Bar-->
-      <div class="row bg--primary">
+      <div class="row m-0 p-0 bg--primary">
           <nav class="navbar navbar-light navbar-expand-lg p-3">
               <div class="container justify-content-between">
                 <a class="navbar-brand" href="#">Juan Pablo Biondo</a>
@@ -44,25 +44,27 @@
             </nav>
           </div>
       <!--Intro Section-->
-      <section class="container align-self-center row align-items-center text-light flex-grow-1 p-5">
-        <div class="d-flex row align-items-center">
-          <div class="col">
-              <h1 class="introduction-text">Hola! Me llamo<br><span>Juan Pablo</span><br>practico para ser desarrollador<br><span>Full Stack Junior</span></t1>
+      <div class="row container justify-content-center align-items-center text-light p-5" >
+          <div class="col-sm-12 col-md-7 col-lg-7 col-xl-6">
+              <h1 class="display-4" id="intro-text">Hola! Me llamo<br><span>Juan Pablo</span><br>practico para ser desarrollador<br><span>Full Stack Junior</span></t1>
           </div>
-          <div class="d-flex col-md-3 row justify-content-center">
-              <img src="https://avatars.githubusercontent.com/u/24610432?s=400&v=4" class="img-thumbnail row" alt="GitHub Profile Photo">
-              <div class="row mt-2">
-                <div class="d-flex col justify-content-center">
+          <div class="d-flex col-sm-12 col-md-5 col-lg-4 col-xl-3 row justify-content-center" id="social-media">
+            <div class="row img-container justify-content-center">
+              <img src="https://avatars.githubusercontent.com/u/24610432?s=400&v=4" id="profile-pic" alt="GitHub Profile Photo">
+            </div>
+
+              <div class="row mt-2 justify-content-center">
+                <div class="d-flex col col-sm-2 col-md-3 justify-content-center">
                   <a href="https://www.instagram.com/rektyaoiusa/" class="social-link" target="_blank">
                     <i class="fa-brands fa-square-instagram fa-3x"></i>
                   </a>
                 </div>
-                <div class="d-flex col justify-content-center">
+                <div class="d-flex col col-sm-2 col-md-3 justify-content-center">
                   <a href="https://github.com/caylow" class="social-link" target="_blank">
                     <i class="fa-brands fa-square-github fa-3x"></i>
                   </a>
                 </div>
-                <div class="d-flex col justify-content-center">
+                <div class="d-flex col col-sm-2 col-md-3 justify-content-center">
                   <a href="https://www.linkedin.com/in/juan-pablo-biondo-3b28001b8/" class="social-link" target="_blank">
                     <i class="fa-brands fa-linkedin fa-3x"></i>
                   </a>
@@ -70,7 +72,6 @@
               </div>
           </div>
         </div>
-      </section>
    </header>
    <!--Skill Section-->
     <section class="container row m-5">
